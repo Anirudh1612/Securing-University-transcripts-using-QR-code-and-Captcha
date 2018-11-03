@@ -43,8 +43,7 @@ if __name__ == '__main__':
 	new=1;
 	flag=0
 	for i in range(3):
-		print("Attemtpt Number = ",i+1)
-		#url = "file:///C:/Users/Vijaya%20Sharma/Desktop/text_captcha/result.html";    
+		print("Attemtpt Number = ",i+1) 
 		if(set1 == set2):
 			print("Captcha matched")
 			flag = 0
