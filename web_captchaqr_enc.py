@@ -81,8 +81,11 @@ if __name__ == '__main__':
     # Create random text.
     captcha_text = create_random_captcha_text()
     #print(captcha_text)
-    #input1 = input( u"https://www.geeksforgeeks.org/")
-    qr = pyqrcode.create(u"file:///C:/Users/Vijaya%20Sharma/Desktop/text_captcha/result.html")
+    #input1 = input( u"https://www.google.com")  this is an example of how you can provide url link
+	
+# Author Anirudh Sharma	
+	
+    qr = pyqrcode.create(u"url link of the file")
     print("Generating the qr code ...")	
 
     qr.png("qr.png",scale=10)
@@ -98,7 +101,7 @@ if __name__ == '__main__':
 
     
 
-    s.sendall(message.encode('utf-8'))
+    s.sendall(message.encode('utf-8'))  # sends the captcha key to the decryption code , where it is used for verification
     data = s.recv(1024)
     
 
